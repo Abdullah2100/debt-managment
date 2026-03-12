@@ -9,24 +9,87 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc32dff4-1be1-4da7-a35b-d492a84a2313" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/data/Entity/GeneralField.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Entity/Store.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Entity/Transaction.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Repository/DebtsRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Repository/EmployeeRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Repository/RePaymentRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Repository/StoreRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Repository/UserRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/UnitOfWork/UnitOfWork.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.api/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.api/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/api/api.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/appsettings.Development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/appsettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/obj/Debug/net10.0/api.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/obj/Debug/net10.0/api.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/obj/Debug/net10.0/api.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/api/obj/Debug/net10.0/api.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/obj/Debug/net10.0/api.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/api/obj/Debug/net10.0/api.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/obj/Debug/net10.0/api.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/api/obj/Debug/net10.0/api.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/obj/Debug/net10.0/api.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/api/obj/Debug/net10.0/api.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/obj/api.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/obj/api.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/obj/api.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/api/obj/api.csproj.nuget.g.props" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/obj/api.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/api/obj/api.csproj.nuget.g.targets" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/api/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/api/obj/rider.project.model.nuget.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/api/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../erd.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/../erd.drawio" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/business.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/business/business.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/obj/Debug/net10.0/business.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/business/obj/Debug/net10.0/business.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/obj/Debug/net10.0/business.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/business/obj/Debug/net10.0/business.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/obj/Debug/net10.0/business.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/business/obj/Debug/net10.0/business.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/obj/Debug/net10.0/business.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/business/obj/Debug/net10.0/business.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/obj/business.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/business/obj/business.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/obj/business.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/business/obj/business.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/obj/business.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/business/obj/business.csproj.nuget.g.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/business/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/business/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/business/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/business/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/business/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/data/data.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/obj/Debug/net10.0/data.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/data/obj/Debug/net10.0/data.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/obj/Debug/net10.0/data.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/data/obj/Debug/net10.0/data.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/obj/Debug/net10.0/data.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/data/obj/Debug/net10.0/data.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/obj/Debug/net10.0/data.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/data/obj/Debug/net10.0/data.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/obj/data.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/obj/data.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/obj/data.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/data/obj/data.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/obj/data.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/data/obj/data.csproj.nuget.g.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/data/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/data/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DpaMonitoringSettings">
+    <option name="firstShow" value="false" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/ILViewer/0127053b555f4d3398f59954a4e23f6e6800/17/94db3570/02000002pdb1.il" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/business/Class1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/data/AppDbContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/data/Entity/Debt.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/data/Entity/Employee.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/data/Entity/GeneralField.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/data/Entity/Store.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/data/Entity/Transaction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/data/Entity/User.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/data/Interface/IDebtsRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/data/Interface/IEmployeeRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/data/Interface/IRePaymentRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/data/Interface/IStoreRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/data/Interface/IUserRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/data/UnitOfWork/IUnitOfWork.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/data/UnitOfWork/UnitOfWork.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -36,21 +99,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.api: http.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.api: http">
     <configuration name="api: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/api/api.csproj" />
@@ -84,6 +149,23 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="Multi-Launch: api" type="com.intellij.execution.configurations.multilaunch" factoryName="MultiLaunchConfiguration">
+      <rows>
+        <ExecutableRowSnapshot>
+          <option name="condition">
+            <ConditionSnapshot>
+              <option name="type" value="immediately" />
+            </ConditionSnapshot>
+          </option>
+          <option name="executable">
+            <ExecutableSnapshot>
+              <option name="id" value="runConfig:.NET Launch Settings Profile.api: http" />
+            </ExecutableSnapshot>
+          </option>
+        </ExecutableRowSnapshot>
+      </rows>
+      <method v="2" />
+    </configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -95,6 +177,7 @@
       <workItem from="1772777093354" duration="21000" />
       <workItem from="1772862277716" duration="1167000" />
       <workItem from="1773056527773" duration="603000" />
+      <workItem from="1773297342567" duration="15113000" />
     </task>
     <servers />
   </component>
@@ -120,6 +203,32 @@
           <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="3" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/api/Program.cs</url>
+          <line>14</line>
+          <properties documentPath="$PROJECT_DIR$/api/Program.cs" containingFunctionPresentation="">
+            <startOffsets>
+              <option value="420" />
+            </startOffsets>
+            <endOffsets>
+              <option value="456" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/api/Program.cs</url>
+          <line>12</line>
+          <properties documentPath="$PROJECT_DIR$/api/Program.cs" containingFunctionPresentation="">
+            <startOffsets>
+              <option value="280" />
+            </startOffsets>
+            <endOffsets>
+              <option value="360" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
