@@ -9,15 +9,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc32dff4-1be1-4da7-a35b-d492a84a2313" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.api/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.api/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Entity/BlockedStoreEmployeeUser.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.$erd.drawio.bkp" beforeDir="false" afterPath="$PROJECT_DIR$/../.$erd.drawio.bkp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/AppDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/data/AppDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Entity/Debt.cs" beforeDir="false" afterPath="$PROJECT_DIR$/data/Entity/Debt.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Entity/Employee.cs" beforeDir="false" afterPath="$PROJECT_DIR$/data/Entity/Employee.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Entity/EmployeeBlockedByStore.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Entity/RePayment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/data/Entity/RePayment.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/Entity/Store.cs" beforeDir="false" afterPath="$PROJECT_DIR$/data/Entity/Store.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Interface/IEmployeeRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/data/Interface/IEmployeeRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Interface/IUserRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/data/Interface/IUserRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Repository/EmployeeRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/data/Repository/EmployeeRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Repository/UserRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/data/Repository/UserRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/obj/Debug/net10.0/data.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/data/obj/Debug/net10.0/data.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/obj/Debug/net10.0/data.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/data/obj/Debug/net10.0/data.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Entity/Transaction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/data/Entity/Transaction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Entity/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/data/Entity/User.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Interface/IDebtsRepository.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Interface/IEmployeeRepository.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Interface/IRePaymentRepository.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Interface/IStoreRepository.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Interface/IUserRepository.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Repository/DebtsRepository.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Repository/EmployeeRepository.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Repository/RePaymentRepository.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Repository/StoreRepository.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Repository/UserRepository.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/UnitOfWork/IUnitOfWork.cs" beforeDir="false" afterPath="$PROJECT_DIR$/data/UnitOfWork/IUnitOfWork.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/UnitOfWork/UnitOfWork.cs" beforeDir="false" afterPath="$PROJECT_DIR$/data/UnitOfWork/UnitOfWork.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/data/data.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../erd.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/../erd.drawio" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,23 +73,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.api: http.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.api: http.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.api: http">
     <configuration name="api: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/api/api.csproj" />
@@ -138,6 +152,7 @@
       <workItem from="1772862277716" duration="1167000" />
       <workItem from="1773056527773" duration="603000" />
       <workItem from="1773297342567" duration="19873000" />
+      <workItem from="1773565024505" duration="7763000" />
     </task>
     <servers />
   </component>

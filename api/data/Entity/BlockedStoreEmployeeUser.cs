@@ -1,6 +1,7 @@
 namespace data.Entity;
 
-public class EmployeeBlockedByStore : GeneralField
+
+public class BlockedStoreEmployeeUser : GeneralField
 {
     public Guid UserId { get; set; }
 

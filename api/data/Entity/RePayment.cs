@@ -1,14 +1,15 @@
 namespace data.Entity;
 
-public class RePayment:GeneralField
+public class RePayment : GeneralField
 {
-    public Guid UserId { get; set; }
-    public  int Value { get; set; }
-    public  Guid AddedBy  { get; set; }
+    public Guid RePaymentUserId { get; set; }
+    public Guid OperatedByStoreEmployeeUserId { get; set; }
     public Guid StoreId { get; set; }
-    
-    public User User { get; set; }
-    public Store Store { get; set; }
-    public Employee EmployeeAdded { get; set; }
 
+    public int Value { get; set; }
+    public string Note { get; set; }
+
+    public User RePaymentBy { get; set; }
+    public Store Store { get; set; }
+    public StoreEmployeeUser StoreEmployeeUser { get; set; }
 }
