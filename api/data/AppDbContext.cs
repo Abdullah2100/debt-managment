@@ -10,6 +10,7 @@ public class AppDbContext(DbContextOptions<AppDbContext> option) : DbContext(opt
     public DbSet<Store> Stores { get; set; }
     public DbSet<Debt> Debts { get; set; }
     public DbSet<RePayment> RePayments { get; set; }
+    public DbSet<EmployeeBlockedByStore> StoreBlockedEmployee { get; set; }
 
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -42,6 +43,10 @@ public class AppDbContext(DbContextOptions<AppDbContext> option) : DbContext(opt
                 .WithOne()
                 .HasForeignKey<Store>(s => s.OwnerUesrId)
                 .HasPrincipalKey<User>(u => u.Id);
+
+            entity.HasMany<EmployeeBlockedByStore>(us => us.BlockedEmployees)
+                .WithOne()
+                .HasForeignKey(us => us.StoreId);
         });
 
 

@@ -32,4 +32,9 @@ public class UserRepository(AppDbContext context) : IUserRepository
     {
         context.Users.Update(user);
     }
+
+    public Task<User?> GetUser(Guid id)
+    {
+        return context.Users.FirstOrDefaultAsync(us => us.Id == id);
+    }
 }
