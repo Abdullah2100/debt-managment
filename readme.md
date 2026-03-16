@@ -7,9 +7,9 @@
 **DebtFlow** is a learning-oriented web application for managing customer debts and payments. Users can create debts for their customers, record partial or full payments, and keep track of outstanding balances. The project is intentionally built as a sandbox to explore modern software architecture patterns:
 
 - **Local‑First** design (offline capability, sync when online)
-- **Backend caching** (Redis, in‑memory caches, or CDN strategies)
+- **Backend caching** (Redis)
 - **Containerization** with Docker
-- **Orchestration** with Kubernetes (minikube, kind, or a cloud provider)
+
 
 > ⚠️ **This repository is currently under active development.**  
 > The codebase is still being shaped, and many features are experimental. Feel free to watch, star, or even contribute – but don't use it in production (yet)!
@@ -21,18 +21,14 @@
 This project is not meant to be a production‑ready SaaS; it’s a **playground** to understand and implement:
 
 - **Local‑First Architecture**  
-  How to build an app that works offline and syncs data when connectivity is restored (e.g., using IndexedDB, CRDTs, or a simple client‑side store with a sync engine).
+  How to build an app that works offline and syncs data when connectivity is restored (e.g., using postgresql, CRDTs, or a simple client‑side store with a sync engine).
 
 - **Backend Caching Strategies**  
   Improve performance and reduce database load by caching frequent queries (Redis, Memcached) and explore HTTP caching (ETags, Cache‑Control).
 
 - **Dockerization**  
-  Containerise the application (frontend, backend, database, cache) for consistent development and deployment.
+  Containerise the application (backend, database, cache) for consistent development and deployment.
 
-- **Kubernetes Deployment**  
-  Deploy the containerised app to a Kubernetes cluster, learn about pods, services, ingress, and maybe even Helm charts.
-
----
 
 ## ✨ Planned Features
 
@@ -45,7 +41,6 @@ This project is not meant to be a production‑ready SaaS; it’s a **playground
 - [ ] RESTful API with caching headers
 - [ ] Redis caching for frequently accessed data
 - [ ] Docker Compose setup for local development
-- [ ] Kubernetes manifests for staging/production
 
 ---
 
@@ -60,7 +55,6 @@ This project is not meant to be a production‑ready SaaS; it’s a **playground
 | Database       | PostgreSQL / Room (local)        |
 | Cache          | Redis                            |
 | Container      | Docker + Docker Compose          |
-| Orchestration  | Kubernetes (minikube / k3s)      |
  ---------------------------------------------------
 
 ---
