@@ -1,0 +1,27 @@
+
+## User
+1 - login user
+2 - create user
+3 - forget password & reseate use password ( otp message via (whastapp| telegram | email))
+4 - user getting list of store
+5 - user is request debts
+6 - user is repayement thir debts
+7 - request user transaction from defferent stores
+
+
+# Store
+1 - store create employee
+2 - store is assign employee to there store and adding the permission ( create ,update ,view , or both)
+3 - request store transaction 
+
+3 - store can block employ from intraction at it own store
+4 - store can getting list of employee belong to them and the blocked employeed also
+5 - store can getting list of debet user from it own store
+
+
+## storeEmplyeeUser
+1 - storeEmplyeeUser can make debts and repayement .
+
+
+## transaction
+1 - tracking any change at the debet and repayment from storeEmplyeeUser
