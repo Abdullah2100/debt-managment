@@ -22,35 +22,14 @@ namespace data.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("EmployeeStore", b =>
-                {
-                    b.Property<Guid>("EmployeesId")
-                        .HasColumnType("uuid");
-
-                    b.Property<Guid>("StoresId")
-                        .HasColumnType("uuid");
-
-                    b.HasKey("EmployeesId", "StoresId");
-
-                    b.HasIndex("StoresId");
-
-                    b.ToTable("EmployeeStore");
-                });
-
-            modelBuilder.Entity("data.Entity.Debt", b =>
+            modelBuilder.Entity("data.Entity.BlockedStoreEmployeeUser", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
-                    b.Property<Guid>("AddedBy")
-                        .HasColumnType("uuid");
-
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("timestamp with time zone");
-
-                    b.Property<Guid>("EmployeeAddedId")
-                        .HasColumnType("uuid");
 
                     b.Property<Guid>("StoreId")
                         .HasColumnType("uuid");
@@ -61,18 +40,50 @@ namespace data.Migrations
                     b.Property<Guid>("UserId")
                         .HasColumnType("uuid");
 
+                    b.HasKey("Id");
+
+                    b.HasIndex("StoreId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("StoreBlockedEmployee");
+                });
+
+            modelBuilder.Entity("data.Entity.Debt", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<Guid>("DebtUserId")
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Note")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<Guid>("OperatedByStoreEmployeeUserId")
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid>("StoreId")
+                        .HasColumnType("uuid");
+
+                    b.Property<DateTime>("UpdateAt")
+                        .HasColumnType("timestamp with time zone");
+
                     b.Property<int>("Value")
                         .HasColumnType("integer");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("AddedBy");
+                    b.HasIndex("DebtUserId");
 
-                    b.HasIndex("EmployeeAddedId");
+                    b.HasIndex("OperatedByStoreEmployeeUserId");
 
                     b.HasIndex("StoreId");
-
-                    b.HasIndex("UserId");
 
                     b.ToTable("Debts");
                 });
@@ -85,12 +96,6 @@ namespace data.Migrations
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("timestamp with time zone");
-
-                    b.Property<int>("Permission")
-                        .HasColumnType("integer");
-
-                    b.Property<Guid>("StoreId")
-                        .HasColumnType("uuid");
 
                     b.Property<DateTime>("UpdateAt")
                         .HasColumnType("timestamp with time zone");
@@ -112,13 +117,17 @@ namespace data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
-                    b.Property<Guid>("AddedBy")
-                        .HasColumnType("uuid");
-
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("timestamp with time zone");
 
-                    b.Property<Guid>("EmployeeAddedId")
+                    b.Property<string>("Note")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<Guid>("OperatedByStoreEmployeeUserId")
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid>("RePaymentUserId")
                         .HasColumnType("uuid");
 
                     b.Property<Guid>("StoreId")
@@ -127,21 +136,16 @@ namespace data.Migrations
                     b.Property<DateTime>("UpdateAt")
                         .HasColumnType("timestamp with time zone");
 
-                    b.Property<Guid>("UserId")
-                        .HasColumnType("uuid");
-
                     b.Property<int>("Value")
                         .HasColumnType("integer");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("AddedBy");
+                    b.HasIndex("OperatedByStoreEmployeeUserId");
 
-                    b.HasIndex("EmployeeAddedId");
+                    b.HasIndex("RePaymentUserId");
 
                     b.HasIndex("StoreId");
-
-                    b.HasIndex("UserId");
 
                     b.ToTable("RePayments");
                 });
@@ -155,11 +159,8 @@ namespace data.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("timestamp with time zone");
 
-                    b.Property<Guid>("OwnerEmployeeId")
-                        .HasColumnType("uuid");
-
-                    b.Property<Guid>("OwnerUesrId")
-                        .HasColumnType("uuid");
+                    b.Property<bool>("IsBlocked")
+                        .HasColumnType("boolean");
 
                     b.Property<string>("StoreName")
                         .IsRequired()
@@ -170,10 +171,44 @@ namespace data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("OwnerUesrId")
+                    b.ToTable("Stores");
+                });
+
+            modelBuilder.Entity("data.Entity.StoreEmployeeUser", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("boolean");
+
+                    b.Property<bool>("IsMainStoreAdmin")
+                        .HasColumnType("boolean");
+
+                    b.Property<int>("Permission")
+                        .HasColumnType("integer");
+
+                    b.Property<Guid>("StoreId")
+                        .HasColumnType("uuid");
+
+                    b.Property<DateTime>("UpdateAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uuid");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("StoreId");
+
+                    b.HasIndex("UserId")
                         .IsUnique();
 
-                    b.ToTable("Stores");
+                    b.ToTable("StoreEmployeeUser");
                 });
 
             modelBuilder.Entity("data.Entity.Transaction", b =>
@@ -185,13 +220,25 @@ namespace data.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("timestamp with time zone");
 
-                    b.Property<Guid>("EditBy")
+                    b.Property<Guid>("CreatedById")
                         .HasColumnType("uuid");
 
-                    b.Property<int>("NewValue")
+                    b.Property<bool>("IsDebt")
+                        .HasColumnType("boolean");
+
+                    b.Property<bool>("IsUpdated")
+                        .HasColumnType("boolean");
+
+                    b.Property<string>("NewNote")
+                        .HasColumnType("text");
+
+                    b.Property<int?>("NewValue")
                         .HasColumnType("integer");
 
-                    b.Property<int>("OldValue")
+                    b.Property<string>("OldNote")
+                        .HasColumnType("text");
+
+                    b.Property<int?>("OldValue")
                         .HasColumnType("integer");
 
                     b.Property<Guid>("OperationId")
@@ -205,8 +252,7 @@ namespace data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("EditBy")
-                        .IsUnique();
+                    b.HasIndex("CreatedById");
 
                     b.HasIndex("StoreId");
 
@@ -222,13 +268,17 @@ namespace data.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("timestamp with time zone");
 
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("varchar(50)");
+
                     b.Property<string>("FullName")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasColumnType("varchar(50)");
 
                     b.Property<string>("Phone")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasColumnType("varchar(15)");
 
                     b.Property<DateTime>("UpdateAt")
                         .HasColumnType("timestamp with time zone");
@@ -238,37 +288,10 @@ namespace data.Migrations
                     b.ToTable("Users");
                 });
 
-            modelBuilder.Entity("EmployeeStore", b =>
+            modelBuilder.Entity("data.Entity.BlockedStoreEmployeeUser", b =>
                 {
-                    b.HasOne("data.Entity.Employee", null)
-                        .WithMany()
-                        .HasForeignKey("EmployeesId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("data.Entity.Store", null)
-                        .WithMany()
-                        .HasForeignKey("StoresId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("data.Entity.Debt", b =>
-                {
-                    b.HasOne("data.Entity.Employee", null)
-                        .WithMany("Debts")
-                        .HasForeignKey("AddedBy")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("data.Entity.Employee", "EmployeeAdded")
-                        .WithMany()
-                        .HasForeignKey("EmployeeAddedId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("data.Entity.Store", "Store")
-                        .WithMany()
+                        .WithMany("BlockedEmployeeUsersStore")
                         .HasForeignKey("StoreId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -279,17 +302,42 @@ namespace data.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("EmployeeAdded");
-
                     b.Navigation("Store");
 
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("data.Entity.Debt", b =>
+                {
+                    b.HasOne("data.Entity.User", "DebtBy")
+                        .WithMany("MyDebts")
+                        .HasForeignKey("DebtUserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("data.Entity.StoreEmployeeUser", "StoreEmployeeUser")
+                        .WithMany("StoreDebt")
+                        .HasForeignKey("OperatedByStoreEmployeeUserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("data.Entity.Store", "Store")
+                        .WithMany("StoreDebt")
+                        .HasForeignKey("StoreId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("DebtBy");
+
+                    b.Navigation("Store");
+
+                    b.Navigation("StoreEmployeeUser");
+                });
+
             modelBuilder.Entity("data.Entity.Employee", b =>
                 {
                     b.HasOne("data.Entity.User", "User")
-                        .WithOne()
+                        .WithOne("Employee")
                         .HasForeignKey("data.Entity.Employee", "UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -299,72 +347,100 @@ namespace data.Migrations
 
             modelBuilder.Entity("data.Entity.RePayment", b =>
                 {
-                    b.HasOne("data.Entity.Employee", null)
-                        .WithMany("RePayments")
-                        .HasForeignKey("AddedBy")
+                    b.HasOne("data.Entity.StoreEmployeeUser", "StoreEmployeeUser")
+                        .WithMany("StoreRepayment")
+                        .HasForeignKey("OperatedByStoreEmployeeUserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("data.Entity.Employee", "EmployeeAdded")
-                        .WithMany()
-                        .HasForeignKey("EmployeeAddedId")
+                    b.HasOne("data.Entity.User", "RePaymentBy")
+                        .WithMany("MyRepayment")
+                        .HasForeignKey("RePaymentUserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("data.Entity.Store", "Store")
-                        .WithMany()
+                        .WithMany("StoreRepayment")
+                        .HasForeignKey("StoreId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("RePaymentBy");
+
+                    b.Navigation("Store");
+
+                    b.Navigation("StoreEmployeeUser");
+                });
+
+            modelBuilder.Entity("data.Entity.StoreEmployeeUser", b =>
+                {
+                    b.HasOne("data.Entity.Store", "Store")
+                        .WithMany("EmployeeUsersStore")
                         .HasForeignKey("StoreId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("data.Entity.User", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId")
+                        .WithOne("StoreEmployeeUser")
+                        .HasForeignKey("data.Entity.StoreEmployeeUser", "UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("EmployeeAdded");
 
                     b.Navigation("Store");
-
-                    b.Navigation("User");
-                });
-
-            modelBuilder.Entity("data.Entity.Store", b =>
-                {
-                    b.HasOne("data.Entity.User", "User")
-                        .WithOne()
-                        .HasForeignKey("data.Entity.Store", "OwnerUesrId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
 
                     b.Navigation("User");
                 });
 
             modelBuilder.Entity("data.Entity.Transaction", b =>
                 {
-                    b.HasOne("data.Entity.Employee", "EditByEmployee")
-                        .WithOne()
-                        .HasForeignKey("data.Entity.Transaction", "EditBy")
+                    b.HasOne("data.Entity.StoreEmployeeUser", "StoreEmployeeUser")
+                        .WithMany("StoreOperationTransactions")
+                        .HasForeignKey("CreatedById")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("data.Entity.Store", "Store")
-                        .WithMany()
+                        .WithMany("StoreTransactions")
                         .HasForeignKey("StoreId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("EditByEmployee");
-
                     b.Navigation("Store");
+
+                    b.Navigation("StoreEmployeeUser");
                 });
 
-            modelBuilder.Entity("data.Entity.Employee", b =>
+            modelBuilder.Entity("data.Entity.Store", b =>
                 {
-                    b.Navigation("Debts");
+                    b.Navigation("BlockedEmployeeUsersStore");
 
-                    b.Navigation("RePayments");
+                    b.Navigation("EmployeeUsersStore");
+
+                    b.Navigation("StoreDebt");
+
+                    b.Navigation("StoreRepayment");
+
+                    b.Navigation("StoreTransactions");
+                });
+
+            modelBuilder.Entity("data.Entity.StoreEmployeeUser", b =>
+                {
+                    b.Navigation("StoreDebt");
+
+                    b.Navigation("StoreOperationTransactions");
+
+                    b.Navigation("StoreRepayment");
+                });
+
+            modelBuilder.Entity("data.Entity.User", b =>
+                {
+                    b.Navigation("Employee");
+
+                    b.Navigation("MyDebts");
+
+                    b.Navigation("MyRepayment");
+
+                    b.Navigation("StoreEmployeeUser");
                 });
 #pragma warning restore 612, 618
         }

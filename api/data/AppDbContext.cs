@@ -20,12 +20,10 @@ public class AppDbContext(DbContextOptions<AppDbContext> option) : DbContext(opt
         {
             user.HasOne(us => us.Employee)
                 .WithOne(us => us.User)
-                .HasPrincipalKey<User>(us => us.Id)
                 .HasForeignKey<Employee>(em => em.UserId);
 
             user.HasOne(us => us.StoreEmployeeUser)
                 .WithOne(seu => seu.User)
-                .HasPrincipalKey<User>(us => us.Id)
                 .HasForeignKey<StoreEmployeeUser>(seu => seu.UserId);
 
             user.HasMany(us => us.MyRepayment)
