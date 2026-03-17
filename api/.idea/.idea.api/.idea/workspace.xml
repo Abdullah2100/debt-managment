@@ -9,27 +9,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc32dff4-1be1-4da7-a35b-d492a84a2313" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../.$erd.drawio.bkp" beforeDir="false" afterPath="$PROJECT_DIR$/../.$erd.drawio.bkp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.api/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.api/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/appsettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/obj/Debug/net10.0/api.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/obj/Debug/net10.0/api.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/obj/Debug/net10.0/api.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/api/obj/Debug/net10.0/api.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/obj/Debug/net10.0/api.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/api/obj/Debug/net10.0/api.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/business/obj/Debug/net10.0/business.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/business/obj/Debug/net10.0/business.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/business/obj/Debug/net10.0/business.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/business/obj/Debug/net10.0/business.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/business/obj/Debug/net10.0/business.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/business/obj/Debug/net10.0/business.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/AppDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/data/AppDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Entity/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/data/Entity/User.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Migrations/20260312180823_Initial.Designer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Migrations/20260312180823_Initial.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Migrations/AppDbContextModelSnapshot.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Repository/Implement/UserRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/data/Repository/Implement/UserRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/Repository/Interface/IUserRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/data/Repository/Interface/IUserRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/UnitOfWork/IUnitOfWork.cs" beforeDir="false" afterPath="$PROJECT_DIR$/data/UnitOfWork/IUnitOfWork.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/UnitOfWork/UnitOfWork.cs" beforeDir="false" afterPath="$PROJECT_DIR$/data/UnitOfWork/UnitOfWork.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/data/data.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/obj/Debug/net10.0/data.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/data/obj/Debug/net10.0/data.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/obj/Debug/net10.0/data.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/data/obj/Debug/net10.0/data.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../erd.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/../erd.drawio" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +43,7 @@
     <setting file="file://$PROJECT_DIR$/data/Entity/Store.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/data/Entity/Transaction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/data/Entity/User.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/data/Repository/Implement/EmployeeRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/data/Repository/Implement/UserRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/data/Repository/Interface/IUserRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/data/UnitOfWork/IUnitOfWork.cs" root0="FORCE_HIGHLIGHTING" />
@@ -147,7 +138,7 @@
       <workItem from="1773297342567" duration="19873000" />
       <workItem from="1773565024505" duration="7763000" />
       <workItem from="1773663555457" duration="1042000" />
-      <workItem from="1773745501325" duration="2365000" />
+      <workItem from="1773745501325" duration="3869000" />
     </task>
     <servers />
   </component>

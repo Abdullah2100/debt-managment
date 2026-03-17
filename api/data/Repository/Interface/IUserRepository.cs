@@ -9,5 +9,5 @@ public interface IUserRepository
     
     Task<ICollection<Debt>> GetMyDebts(Guid userId,int page,int size);
     Task<ICollection<RePayment>> GetMyRePayments(Guid userId,int page,int size);
-    
+    Task<ICollection<User>> GetUsers(int page,int size);
 }
