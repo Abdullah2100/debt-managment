@@ -9,30 +9,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc32dff4-1be1-4da7-a35b-d492a84a2313" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/data/Entity/BlockedStoreEmployeeUser.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.$erd.drawio.bkp" beforeDir="false" afterPath="$PROJECT_DIR$/../.$erd.drawio.bkp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/AppDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/data/AppDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Entity/Debt.cs" beforeDir="false" afterPath="$PROJECT_DIR$/data/Entity/Debt.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Entity/Employee.cs" beforeDir="false" afterPath="$PROJECT_DIR$/data/Entity/Employee.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Entity/EmployeeBlockedByStore.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Entity/RePayment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/data/Entity/RePayment.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Entity/Store.cs" beforeDir="false" afterPath="$PROJECT_DIR$/data/Entity/Store.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Entity/Transaction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/data/Entity/Transaction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Entity/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/data/Entity/User.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Interface/IDebtsRepository.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Interface/IEmployeeRepository.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Interface/IRePaymentRepository.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Interface/IStoreRepository.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Interface/IUserRepository.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Repository/DebtsRepository.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Repository/EmployeeRepository.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Repository/RePaymentRepository.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Repository/StoreRepository.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Repository/UserRepository.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/UnitOfWork/IUnitOfWork.cs" beforeDir="false" afterPath="$PROJECT_DIR$/data/UnitOfWork/IUnitOfWork.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/UnitOfWork/UnitOfWork.cs" beforeDir="false" afterPath="$PROJECT_DIR$/data/UnitOfWork/UnitOfWork.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/obj/Debug/net10.0/api.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/obj/Debug/net10.0/api.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/obj/Debug/net10.0/api.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/api/obj/Debug/net10.0/api.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/obj/Debug/net10.0/business.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/business/obj/Debug/net10.0/business.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/obj/Debug/net10.0/business.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/business/obj/Debug/net10.0/business.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/data.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/data/data.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../erd.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/../erd.drawio" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/obj/Debug/net10.0/data.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/data/obj/Debug/net10.0/data.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/obj/Debug/net10.0/data.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/data/obj/Debug/net10.0/data.AssemblyInfoInputs.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,16 +35,11 @@
     <setting file="file://$PROJECT_DIR$/data/AppDbContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/data/Entity/Debt.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/data/Entity/Employee.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/data/Entity/EmployeeBlockedByStore.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/data/Entity/GeneralField.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/data/Entity/Store.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/data/Entity/Transaction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/data/Entity/User.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/data/Interface/IDebtsRepository.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/data/Interface/IEmployeeRepository.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/data/Interface/IRePaymentRepository.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/data/Interface/IStoreRepository.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/data/Interface/IUserRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/data/Repository/Interface/IUserRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/data/UnitOfWork/IUnitOfWork.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/data/UnitOfWork/UnitOfWork.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -153,6 +131,7 @@
       <workItem from="1773056527773" duration="603000" />
       <workItem from="1773297342567" duration="19873000" />
       <workItem from="1773565024505" duration="7763000" />
+      <workItem from="1773663555457" duration="1042000" />
     </task>
     <servers />
   </component>
