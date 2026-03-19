@@ -2,7 +2,7 @@ using data.Entity;
 
 namespace data.Repository.Interface;
 
-public interface IUserRepository
+public interface IUserRepository:IRepository<User>
 {
     Task<User?> GetUser(Guid id);    
     Task<User?> GetUserByPhone(string phone);

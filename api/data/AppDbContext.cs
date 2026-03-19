@@ -12,6 +12,8 @@ public class AppDbContext(DbContextOptions<AppDbContext> option) : DbContext(opt
     public DbSet<Debt> Debts { get; set; }
     public DbSet<RePayment> RePayments { get; set; }
     public DbSet<BlockedStoreEmployeeUser> StoreBlockedEmployee { get; set; }
+    public DbSet<StoreEmployeeUser> StoreEmployeeUsers { get; set; }
+    public DbSet<Transaction> StoreTransactions { get; set; }
 
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)

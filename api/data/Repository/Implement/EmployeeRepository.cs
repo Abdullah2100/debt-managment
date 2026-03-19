@@ -33,4 +33,14 @@ public class EmployeeRepository(AppDbContext context) : IEmployeeRepository
             .Skip((page - 1) * size)
             .ToListAsync();
     }
+
+    public async Task AddEntity(Employee entity)
+    {
+       await context.Employees.AddAsync(entity);
+    }
+
+    public async Task UpdateEntity(Employee entity)
+    {
+     await   context.Employees.ExecuteUpdateAsync(value=> value.SetProperty(id=> entity.UserId, entity.UserId));
+    }
 }

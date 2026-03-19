@@ -6,7 +6,7 @@ using data.Entity;
 
 namespace data.Repository.Interface
 {
-    public interface IEmployeeRepository
+    public interface IEmployeeRepository:IRepository<Employee>
     {
         Task<Employee?> GetEmployeeById(Guid id);
         Task<Employee?> GetEmployeeByUserId(Guid userId);

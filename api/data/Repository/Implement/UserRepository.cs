@@ -56,4 +56,19 @@ public class UserRepository(AppDbContext context) : IUserRepository
             .Skip((page - 1) * size)
             .ToListAsync();
     }
+    
+    public async Task AddEntity(User entity)
+    {
+        await context.Users.AddAsync(entity);
+    }
+
+    public async Task UpdateEntity(User entity)
+    {
+        await   context.Users
+            .ExecuteUpdateAsync(value=>
+                value
+                    .SetProperty(user=> user.FullName, entity.FullName)
+                    .SetProperty(user=> user.Email, entity.Email)
+                   );
+    }
 }
