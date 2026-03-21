@@ -12,15 +12,11 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.api/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.api/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/obj/Debug/net10.0/api.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/obj/Debug/net10.0/api.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/obj/Debug/net10.0/api.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/api/obj/Debug/net10.0/api.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/obj/Debug/net10.0/api.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/api/obj/Debug/net10.0/api.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/business/obj/Debug/net10.0/business.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/business/obj/Debug/net10.0/business.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/business/obj/Debug/net10.0/business.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/business/obj/Debug/net10.0/business.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/AppDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/data/AppDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Repository/Implement/EmployeeRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/data/Repository/Implement/EmployeeRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Repository/Implement/UserRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/data/Repository/Implement/UserRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Repository/Interface/IEmployeeRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/data/Repository/Interface/IEmployeeRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Repository/Interface/IUserRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/data/Repository/Interface/IUserRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/UnitOfWork/IUnitOfWork.cs" beforeDir="false" afterPath="$PROJECT_DIR$/data/UnitOfWork/IUnitOfWork.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/UnitOfWork/UnitOfWork.cs" beforeDir="false" afterPath="$PROJECT_DIR$/data/UnitOfWork/UnitOfWork.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/obj/Debug/net10.0/business.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/business/obj/Debug/net10.0/business.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/data/data.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/obj/Debug/net10.0/data.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/data/obj/Debug/net10.0/data.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/obj/Debug/net10.0/data.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/data/obj/Debug/net10.0/data.AssemblyInfoInputs.cache" afterDir="false" />
     </list>
@@ -38,6 +34,8 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/ILViewer/0127053b555f4d3398f59954a4e23f6e6800/17/94db3570/02000002pdb1.il" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/53054a046e4b449b9bb5cae14bc0b73bd0200/74/85ebfa79/String.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="jar://$APPLICATION_HOME_DIR$/lib/modules/intellij.rider.jar!/schemas/msbuild/Microsoft.Build.Commontypes.xsd" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$APPLICATION_HOME_DIR$/lib/modules/intellij.rider.jar!/schemas/msbuild/Microsoft.Build.Core.xsd" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/business/Class1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/data/AppDbContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/data/Entity/Debt.cs" root0="FORCE_HIGHLIGHTING" />
@@ -47,10 +45,8 @@
     <setting file="file://$PROJECT_DIR$/data/Entity/Transaction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/data/Entity/User.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/data/Repository/Implement/EmployeeRepository.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/data/Repository/Implement/StoreEmployeeUser.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/data/Repository/Implement/UserRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/data/Repository/Interface/IRepository.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/data/Repository/Interface/IStoreEmployeeUser.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/data/Repository/Interface/IUserRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/data/UnitOfWork/IUnitOfWork.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/data/UnitOfWork/UnitOfWork.cs" root0="FORCE_HIGHLIGHTING" />
@@ -63,24 +59,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Launch Settings Profile.api: http.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.api: http.executor": "Run",
+    ".NET Launch Settings Profile.api: https.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.api: http">
+}]]></component>
+  <component name="RunManager" selected=".NET Launch Settings Profile.api: https">
     <configuration name="api: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/api/api.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net10.0" />
@@ -149,6 +146,7 @@
       <workItem from="1773835332708" duration="1439000" />
       <workItem from="1773946425393" duration="421000" />
       <workItem from="1773947344478" duration="686000" />
+      <workItem from="1773979838615" duration="4209000" />
     </task>
     <servers />
   </component>

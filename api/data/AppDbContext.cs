@@ -13,7 +13,7 @@ public class AppDbContext(DbContextOptions<AppDbContext> option) : DbContext(opt
     public DbSet<RePayment> RePayments { get; set; }
     public DbSet<BlockedStoreEmployeeUser> StoreBlockedEmployee { get; set; }
     public DbSet<StoreEmployeeUser> StoreEmployeeUsers { get; set; }
-    public DbSet<Transaction> StoreTransactions { get; set; }
+    public DbSet<Transaction> Transactions { get; set; }
 
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -31,7 +31,7 @@ public class AppDbContext(DbContextOptions<AppDbContext> option) : DbContext(opt
             user.HasMany(us => us.MyRepayment)
                 .WithOne(rp => rp.RePaymentBy)
                 .HasForeignKey(rp => rp.RePaymentUserId);
-
+            
             user.HasMany(us => us.MyDebts)
                 .WithOne(d => d.DebtBy)
                 .HasForeignKey(d => d.DebtUserId);

@@ -11,6 +11,7 @@ public class UnitOfWork(AppDbContext context ) : IUnitOfWork
     public  IUserRepository Users { get; set; } = new UserRepository(context);
     public IEmployeeRepository EmployeeRepository { get; set; } =  new EmployeeRepository(context);
     public IStoreEmployeeUserRepository StoreEmployeeUserRepository { get; set; } = new StoreEmployeeUserRepository(context);
+    public IStoreRepository StoreRepository { get; set; } =  new StoreRepository(context);
 
     public void Dispose()
     {

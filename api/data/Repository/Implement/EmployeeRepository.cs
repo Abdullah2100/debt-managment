@@ -36,11 +36,15 @@ public class EmployeeRepository(AppDbContext context) : IEmployeeRepository
 
     public async Task AddEntity(Employee entity)
     {
-       await context.Employees.AddAsync(entity);
+        await context.Employees.AddAsync(entity);
     }
 
     public async Task UpdateEntity(Employee entity)
     {
-     await   context.Employees.ExecuteUpdateAsync(value=> value.SetProperty(id=> entity.UserId, entity.UserId));
+        await context.Employees
+            .ExecuteUpdateAsync(value =>
+                value.SetProperty(id => entity.UserId, entity.UserId)
+                    .SetProperty(id => entity.UpdateAt, entity.UpdateAt)
+            );
     }
 }

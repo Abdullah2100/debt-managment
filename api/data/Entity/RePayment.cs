@@ -11,5 +11,6 @@ public class RePayment : GeneralField
 
     public User RePaymentBy { get; set; }
     public Store Store { get; set; }
+    //this the storeemployye user how do the operation
     public StoreEmployeeUser StoreEmployeeUser { get; set; }
 }

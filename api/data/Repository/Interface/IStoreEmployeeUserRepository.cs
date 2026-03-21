@@ -8,8 +8,8 @@ public interface IStoreEmployeeUserRepository:IRepository<StoreEmployeeUser>
     Task<StoreEmployeeUser?> GetStoreEmployeeUserByUserId(Guid userId);
     Task<bool> IsActiveStoreEmployeeUser(Guid id);
 
-    Task<ICollection<Debt>> GetStoreDebts(Guid storeId,int page,int size);
-    Task<ICollection<RePayment>> GetStoreRePayments(Guid storeId,int page,int size);
-    Task<ICollection<Transaction>> GetStoreTransaction(Guid storeId,int page,int size);
+    Task<ICollection<Debt>> GetStoreDebts(Guid id,int page,int size);
+    Task<ICollection<RePayment>> GetStoreRePayments(Guid id,int page,int size);
+    Task<ICollection<Transaction>> GetStoreTransaction(Guid id,int page,int size);
     
 }
