@@ -1,6 +1,6 @@
-@api_HostAddress = http://localhost:5084
+@api_HostAddress = https://localhost:7010
 
-GET {{api_HostAddress}}/weatherforecast/
+GET {{api_HostAddress}}/JUST_FACK
 Accept: application/json
 
 ###

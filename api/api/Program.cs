@@ -24,6 +24,8 @@ if (app.Environment.IsDevelopment())
     app.MapOpenApi();
 }
 
+
+
 app.UseHttpsRedirection();
 
 
