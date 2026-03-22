@@ -70,6 +70,7 @@ public class UserRepository(AppDbContext context) : IUserRepository
                     .SetProperty(user=> user.FullName, entity.FullName)
                     .SetProperty(user=> user.Email, entity.Email)
                     .SetProperty(user=>user.UpdateAt,entity.UpdateAt)
+                    .SetProperty(user=>user.Password,entity.Password)
                    );
     }
 }
